@@ -7,7 +7,8 @@ function Pisanka(props){
             <img className="grafika" src={props.d.img} alt={props.d.nazwa} />
             <p className='nazwa'>{props.d.nazwa}</p>
             <p className='cena'>cena: {props.d.cena} zł</p>
-            <button className='dokoszyka'>dodaj do koszyka</button>
+            <button className='dokoszyka'onClick={props.f}>
+                dodaj do koszyka</button>
         </div>
     );
 }
